@@ -1,0 +1,6 @@
+@import url('../css/media/xl.css') screen and (min-width:1200px);
+@import url('../css/media/lg.css') screen and (min-width:992px) and (max-width:1200px);
+@import url('../css/media/md.css') screen and (min-width:768px) and (max-width:992px);
+@import url('../css/media/sm.css') screen and (min-width:540px) and (max-width:768px);
+@import url('../css/media/xs.css') screen and (max-width:540px);
+@import url('./setting.css');
