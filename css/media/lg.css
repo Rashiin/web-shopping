@@ -194,6 +194,7 @@ div.wrapper {
     position: absolute;
     background-color: rgba(211, 211, 211, 0.685);
     transition: 400ms;
+    display: none;
   }
   div.wrapper > div.arrivalas > div > div.cover > h1 {
     text-align: center;
@@ -523,9 +524,31 @@ div.wrapper {
     text-decoration: none;
     transition: 300ms;
   }
-  div.wrapper > div.footer > div > a:hover {
-    color: #ebd96b;
+  .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
   }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(2):hover {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(3):hover {
+    background: linear-gradient(90deg, rgba(0,196,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,225,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(4):hover {
+    background: linear-gradient(90deg, rgba(23,0,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,234,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(2)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(3)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(4)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;}
   div.ask{
       position: fixed;
       bottom: 50px;
@@ -534,21 +557,22 @@ div.wrapper {
   }
   
   div.ask>a{
-      display: inline-block;
-      padding: 15px;
-      border: 1px solid #ebd96b;
-      border-radius: 20px;
-      background-color: var(--yellowcolor);
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px;
-      transition: 300ms;
-      -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -ms-transition: 300ms;
-      -o-transition: 300ms;
-      position: relative;
+    display: inline-block;
+    padding: 14px;
+    border: 1px solid #ebd96b;
+    border-radius: 30px;
+    left: 10px;
+    background-color: var(--yellowcolor);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    position: relative;
   }
   div.ask>a>svg{
       display: inline-block;

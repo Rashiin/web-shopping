@@ -9,3 +9,6 @@
     --yellowcolor: #ebd96b;
     --left:calc(50% - 89% / 2);
 }
+html{
+    scroll-behavior: smooth;
+}

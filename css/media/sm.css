@@ -46,7 +46,7 @@ div.wrapper {
     top: 20px;
     left: calc(50% - 88% / 2);
     background-color: whitesmoke;
-    height: 450px;
+    height: 420px;
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -66,20 +66,20 @@ div.wrapper {
   h4 {
     text-align: left;
     font-weight: bolder;
-    font-size: 40px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px;
   }
   div.wrapper > div.explore > div > h1:nth-of-type(1) {
     background-color: white;
-    width: 140px;
+    width: 120px;
   }
   div.wrapper > div.explore > div > h1:nth-of-type(3) {
     background-color: #ebd96b;
     width: 170px;
   }
   div.wrapper > div.explore > div > h4 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: lighter;
   }
   div.wrapper > div.explore > div > a {
@@ -92,7 +92,7 @@ div.wrapper {
     width: 70px;
     background-color: black;
     border-radius: 6px;
-    margin-left: 60px;
+    margin-left: 20px;
     transition: 300ms;
   }
   div.wrapper > div.explore > div > a:hover {
@@ -106,11 +106,10 @@ div.wrapper {
     flex-flow: column wrap;
   }
   div.wrapper > div.explore > div:nth-of-type(1) > img {
-    width: 60px;
-    margin-top: 20px;
+    width: 50px;
   }
   div.wrapper > div.explore > div:nth-of-type(2) > img {
-    width: 180px;
+    width: 230px;
   }
   div.wrapper > div.brands {
     width:var(--width);
@@ -122,34 +121,29 @@ div.wrapper {
     height: 90px;
     background-color: #ebd96b;
     display: flex;
-    flex-flow: row wrap;
+   flex-direction: row;
   }
   div.wrapper > div.brands > div {
-    flex: 1 1 0;
     height: inherit;
+    width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: row wrap;
-    background-color: #ebd96b;
-    column-gap: 18px;
+   flex-direction: row;
+    column-gap: 5px;
+    width: inherit;
   }
   div.wrapper > div.brands > div > a {
-    width: 130px;
+    width: 100px;
     height: 30px;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     mix-blend-mode: multiply;
+    margin-left: 2px;
   }
   div.wrapper > div.brands > div > a > img {
-    background-color: #ebd96b;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    box-shadow: 1px 1px 5px #2b2b2b;
-  }
-  div.wrapper > div.brands > div > a > img:nth-of-type(2) {
-    box-shadow: 0 0 5px #2b2b2b;
-    padding: unset;
   }
   div.wrapper > div.brands > div > a > img:hover {
     transform: scale(1.2);
@@ -157,14 +151,14 @@ div.wrapper {
   div.wrapper > div.arrivalas {
     width: 89%;
     left: calc(50% - 89% / 2);
-    height: 400px;
+    height: 330px;
     top: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 5px;
+    column-gap: 10px;
     position: relative;
-    padding: 0 15px;
+    padding: 0 8px;
     justify-content: flex-start;
     overflow: hidden;
   }
@@ -178,15 +172,19 @@ div.wrapper {
     overflow: hidden;
     left: 10%;
     position: relative;
-    width: 150px;
+    width: 140px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    row-gap: 0;
   }
   div.wrapper > div.arrivalas > div > img {
     width: 120px;
     filter: drop-shadow(1px 1px 5px #2b2b2b);
     height: 210px;
+  }
+  div.wrapper>div.arrivalas>div:nth-of-type(2){
+    margin-bottom: unset;
   }
   div.wrapper > div.arrivalas > div> div.cover {
     width: 250px;
@@ -229,16 +227,21 @@ div.wrapper {
   div.wrapper > div.arrivalas > div > div.text {
     display: flex;
     flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    top: 5px;
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
-    display: inline-block;
-    font-size: 15px;
+    font-size: 10px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
+    margin: 2px;
     transition: 300ms;
+    font-size: 9px;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
     color: #2b2b2b;
@@ -247,8 +250,8 @@ div.wrapper {
     width: 89%;
     left: calc(50% - 89% / 2);
     position: relative;
-    height: 400px;
-    top: 33px;
+    height: 360px;
+    top: 30px;
     background-color: rgb(227, 198, 66);
     display: flex;
     flex-flow: row wrap;
@@ -262,7 +265,7 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(1) > img {
     width: 300px;
-    height: 400px;
+    height: 360px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) {
     width: 50%;
@@ -270,9 +273,9 @@ div.wrapper {
     text-align: left;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bolder;
-    margin: 8px;
+    margin: 5px;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
     transition: 300ms;
@@ -289,7 +292,7 @@ div.wrapper {
     width: 180px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
@@ -309,6 +312,7 @@ div.wrapper {
     text-decoration: none;
     transition: 300ms;
     font-weight: lighter;
+    font-size: 13px;
   }
   
   div.wrapper > div.payday > div:nth-of-type(2) > a:hover {
@@ -321,11 +325,11 @@ div.wrapper {
     position: relative;
     left: calc(50% - 89% / 2);
     top: 40px;
-    height: 295px;
+    height: 235px;
     column-gap: 18px;
   }
   div.wrapper > div.favourite > img {
-    width: 280px;
+    width: 180px;
     position: absolute;
   }
   div.wrapper > div.favourite > div {
@@ -350,13 +354,17 @@ div.wrapper {
   div.wrapper > div.favourite > div > div.text {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+  }
+  div.wrapper > div.favourite > div > div.text > h3{
+    font-size: 12px;
   }
   div.wrapper > div.favourite > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
+    margin: 5px;
     transition: 300ms;
+    font-size: 10px;
   }
   div.wrapper > div.favourite > div > div.text > a:hover {
     color: #2b2b2b;
@@ -367,7 +375,7 @@ div.wrapper {
     width: 89%;
     position: relative;
     left: calc(50% - 89% / 2);
-    top: 55px;
+    top: 20px;
     height: 450px;
     column-gap: 20px;
     background-color: whitesmoke;
@@ -389,16 +397,17 @@ div.wrapper {
     font-weight: bolder;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
+    font-size: 20px;
   }
   div.wrapper > div.download > div > h4 {
     color: gray;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: lowercase;
     font-style: oblique;
   }
   div.wrapper > div.download > div > a > img {
-    width: 200px;
+    width: 180px;
   }
   div.wrapper > div.download > div:nth-of-type(2) > img {
     width: 220px;
@@ -410,7 +419,7 @@ div.wrapper {
   }
   div.wrapper > div.join {
     width: 89%;
-    height: 320px;
+    height: 270px;
     background-color: rgb(229, 198, 67);
     position: relative;
     left: calc(50% - 89% / 2);
@@ -459,7 +468,7 @@ div.wrapper {
     -o-transition: 500ms;
   }
   div.wrapper > div.join > form > input[type="submit"]:hover {
-      width: 70px;
+      width: 60px;
       padding: 0;
       font-size: 10px;
       height: 15px;
@@ -471,26 +480,26 @@ div.wrapper {
     margin: 0 auto;
   }
   div.wrapper > div.join > div > h1 {
-    font-size: 28px;
+    font-size: 22px;
     color: whitesmoke;
     font-style: italic;
     text-shadow: 1px 1px 5px lightgray;
   }
   div.wrapper > div.join > div > h4 {
-    font-size: 22px;
+    font-size: 20px;
     color: whitesmoke;
     font-weight: lighter;
     text-align: center;
   }
   div.wrapper > div.footer {
     width: 89%;
-    height: 320px;
+    height: 180px;
     background-color: black;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     margin-top: 15px;
-    column-gap: 10px;
+    column-gap: 9px;
   }
   div.wrapper > div.footer > div {
     margin-top: 30px;
@@ -498,16 +507,17 @@ div.wrapper {
   }
   div.wrapper > div.footer > div > img {
     margin-left: 12px;
+    width: 110px;
   }
   div.wrapper > div.footer > div > h4 {
     color: lightgray;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
   }
   div.wrapper > div.footer > div:nth-of-type(1) > a {
     text-decoration: none;
-    margin: 6px;
-    font-size: 15px;
+    margin: 5px;
+    font-size: 16px;
     color: black;
     padding: 4px;
     border-radius: 10px;
@@ -520,7 +530,7 @@ div.wrapper {
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 8%;
     font-size: 9px;
@@ -530,9 +540,31 @@ div.wrapper {
     text-decoration: none;
     transition: 300ms;
   }
-  div.wrapper > div.footer > div > a:hover {
-    color: #ebd96b;
+  .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
   }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(2):hover {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(3):hover {
+    background: linear-gradient(90deg, rgba(0,196,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,225,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(4):hover {
+    background: linear-gradient(90deg, rgba(23,0,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,234,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(2)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(3)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(4)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;}
   div.ask{
       position: fixed;
       bottom: 50px;
@@ -541,26 +573,33 @@ div.wrapper {
   }
   
   div.ask>a{
-      display: inline-block;
-      padding: 15px;
-      border: 1px solid #ebd96b;
-      border-radius: 20px;
-      background-color: var(--yellowcolor);
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px;
-      transition: 300ms;
-      -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -ms-transition: 300ms;
-      -o-transition: 300ms;
-      position: relative;
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid #ebd96b;
+    border-radius: 30px;
+    left: 10px;
+    background-color: var(--yellowcolor);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    position: relative;
+    font-size: 5px;
   }
   div.ask>a>svg{
       display: inline-block;
       position: relative;
-  }
+      transform: scale(0.8,0.8);
+      -webkit-transform: scale(0.8,0.8);
+      -moz-transform: scale(0.8,0.8);
+      -ms-transform: scale(0.8,0.8);
+      -o-transform: scale(0.8,0.8);
+}
   div.ask>a:hover{
       background-color: chocolate;
   }

@@ -66,8 +66,8 @@ div.wrapper {
   h4 {
     text-align: left;
     font-weight: bolder;
-    font-size: 40px;
-    margin: 10px;
+    font-size: 36px;
+    margin: 8px;
     padding: 10px;
   }
   div.wrapper > div.explore > div > h1:nth-of-type(1) {
@@ -92,7 +92,7 @@ div.wrapper {
     width: 70px;
     background-color: black;
     border-radius: 6px;
-    margin-left: 60px;
+    margin-left: 30px;
     transition: 300ms;
   }
   div.wrapper > div.explore > div > a:hover {
@@ -125,31 +125,26 @@ div.wrapper {
     flex-flow: row wrap;
   }
   div.wrapper > div.brands > div {
-    flex: 1 1 0;
+    position: relative;
+    width: 100%;
     height: inherit;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     background-color: #ebd96b;
-    column-gap: 30px;
+    column-gap: 3px;
   }
   div.wrapper > div.brands > div > a {
-    width: 130px;
-    height: 30px;
+    width: 100px;
     -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    mix-blend-mode: multiply;
+  transition: all 0.7s ease;
+  mix-blend-mode: multiply;
+    margin: 10px;
   }
   div.wrapper > div.brands > div > a > img {
-    background-color: #ebd96b;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    box-shadow: 1px 1px 5px #2b2b2b;
-  }
-  div.wrapper > div.brands > div > a > img:nth-of-type(2) {
-    box-shadow: 0 0 5px #2b2b2b;
-    padding: unset;
   }
   div.wrapper > div.brands > div > a > img:hover {
     transform: scale(1.2);
@@ -157,7 +152,7 @@ div.wrapper {
   div.wrapper > div.arrivalas {
     width: 89%;
     left: calc(50% - 89% / 2);
-    height: 460px;
+    height: 360px;
     top: 48px;
     display: flex;
     flex-direction: row;
@@ -173,13 +168,15 @@ div.wrapper {
     padding: 0;
   }
   div.wrapper > div.arrivalas > div {
-    top: 32px;
+    top: 30px;
     overflow: hidden;
     left: 10%;
     position: relative;
     width: 200px;
     display: flex;
     flex-direction: column;
+    row-gap: 0;
+    flex-wrap: wrap;
   }
   div.wrapper > div.arrivalas > div > img {
     width: 160px;
@@ -228,16 +225,21 @@ div.wrapper {
   div.wrapper > div.arrivalas > div > div.text {
     display: flex;
     flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
-    display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
-    color: gray;
-    margin: 10px;
-    transition: 300ms;
+  color: gray;
+  margin: 5px;
+  transition: 300ms;
+  display: inline-block;
+  font-size: 11px;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
     color: #2b2b2b;
@@ -269,7 +271,7 @@ div.wrapper {
     text-align: left;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2 {
-    font-size: 45px;
+    font-size: 38px;
     font-weight: bolder;
     margin: 10px;
     font-style: oblique;
@@ -288,7 +290,7 @@ div.wrapper {
     width: 180px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h4 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
@@ -320,7 +322,7 @@ div.wrapper {
     position: relative;
     left: calc(50% - 89% / 2);
     top: 40px;
-    height: 370px;
+    height: 280px;
     column-gap: 18px;
   }
   div.wrapper > div.favourite > img {
@@ -351,11 +353,15 @@ div.wrapper {
     flex-direction: row;
     align-items: center;
   }
+  div.wrapper > div.favourite > div > div.text>h3{
+    font-size: 16px;
+  }
   div.wrapper > div.favourite > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
+    margin: 5px;
     transition: 300ms;
+    font-size: 14px;
   }
   div.wrapper > div.favourite > div > div.text > a:hover {
     color: #2b2b2b;
@@ -388,6 +394,7 @@ div.wrapper {
     font-weight: bolder;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
+    font-size: 28px;
   }
   div.wrapper > div.download > div > h4 {
     color: gray;
@@ -433,20 +440,21 @@ div.wrapper {
     width: 290px;
     border: none;
     outline: none;
-    padding: 0 25px;
+    padding: 0 20px;
     border-radius: 5px;
+    font-size: 18px;
   }
   div.wrapper > div.join > form > input[type="submit"] {
     background-color: #2b2b2b;
     color: whitesmoke;
     position: relative;
     height: 30px;
-    width: 90px;
-    left: -100px;
+    width: 80px;
+    left: -90px;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0 20px;
+    padding: 2px 20px;
     transition: 500ms;
     border-radius: 5px;
     transition: 500ms;
@@ -454,12 +462,13 @@ div.wrapper {
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
+    font-size: 14px;
   }
   div.wrapper > div.join > form > input[type="submit"]:hover {
       width: 70px;
       padding: 0;
       font-size: 10px;
-      height: 15px;
+      height: 18px;
     background-color: black;
   }
   div.wrapper > div.join > div {
@@ -495,10 +504,11 @@ div.wrapper {
   }
   div.wrapper > div.footer > div > img {
     margin-left: 14px;
+    width: 140px;
   }
   div.wrapper > div.footer > div > h4 {
     color: lightgray;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: lighter;
   }
   div.wrapper > div.footer > div:nth-of-type(1) > a {
@@ -519,17 +529,40 @@ div.wrapper {
     row-gap: 10px;
     justify-content: center;
     align-items: flex-start;
-    width: 9%;
-    font-size: 8px;
+    width: 10%;
+    font-size: 14px;
   }
   div.wrapper > div.footer > div > a {
     color: lightgray;
     text-decoration: none;
     transition: 300ms;
   }
-  div.wrapper > div.footer > div > a:hover {
-    color: #ebd96b;
+
+  .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
   }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(2):hover {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(3):hover {
+    background: linear-gradient(90deg, rgba(0,196,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,225,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(4):hover {
+    background: linear-gradient(90deg, rgba(23,0,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,234,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(2)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(3)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(4)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;}
   div.ask{
       position: fixed;
       bottom: 50px;
@@ -538,21 +571,22 @@ div.wrapper {
   }
   
   div.ask>a{
-      display: inline-block;
-      padding: 15px;
-      border: 1px solid #ebd96b;
-      border-radius: 20px;
-      background-color: var(--yellowcolor);
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px;
-      transition: 300ms;
-      -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -ms-transition: 300ms;
-      -o-transition: 300ms;
-      position: relative;
+    display: inline-block;
+    padding: 14px;
+    border: 1px solid #ebd96b;
+    border-radius: 30px;
+    left: 10px;
+    background-color: var(--yellowcolor);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    position: relative;
   }
   div.ask>a>svg{
       display: inline-block;

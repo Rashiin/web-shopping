@@ -2,7 +2,7 @@ div.wrapper {
     width: 100%;
   }
   div.wrapper > div.menu {
-    width: 100%;
+    width: auto;
     height: 50px;
     box-shadow: 0 1px 5px #d3d3d3;
     display: flex;
@@ -22,20 +22,22 @@ div.wrapper {
   }
   div.wrapper > div.menu > div:nth-of-type(2) {
     justify-content: flex-end;
+    align-items: center;
   }
   div.wrapper > div.menu > div > a {
     text-decoration: none;
     color: var(--lightgray);
-    margin: 3px;
-    font-size: 7px;
+    margin: 2px;
+    font-size: 6px;
     transition: 400ms;
   }
   div.wrapper > div.menu > div > a:nth-of-type(5) {
-    padding: 7px;
+    padding: 5px;
     border: 1px sold #2b2b2b;
     color: whitesmoke;
     background-color: #2b2b2b;
     border-radius: 5px;
+    font-size: 5px;
   }
   div.wrapper > div.menu > div > a:hover {
     color: lightgray;
@@ -46,7 +48,7 @@ div.wrapper {
     top: 20px;
     left: calc(50% - 88% / 2);
     background-color: whitesmoke;
-    height: 450px;
+    height: 380px;
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -66,33 +68,33 @@ div.wrapper {
   h4 {
     text-align: left;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
     margin: 8px;
     padding: 8px;
   }
   div.wrapper > div.explore > div > h1:nth-of-type(1) {
     background-color: white;
-    width: 140px;
+    width: 80px;
   }
   div.wrapper > div.explore > div > h1:nth-of-type(3) {
     background-color: #ebd96b;
-    width: 170px;
+    width: 90px;
   }
   div.wrapper > div.explore > div > h4 {
-    font-size: 20px;
+    font-size: 13px;
     font-weight: lighter;
   }
   div.wrapper > div.explore > div > a {
     text-decoration: none;
     color: white;
     border: 1px solid #2b2b2b;
-    padding: 8px;
+    padding: 6px;
     font-size: 8px;
     text-align: center;
     width: 70px;
     background-color: black;
     border-radius: 6px;
-    margin-left: 60px;
+    margin-left: 20px;
     transition: 300ms;
   }
   div.wrapper > div.explore > div > a:hover {
@@ -108,9 +110,10 @@ div.wrapper {
   div.wrapper > div.explore > div:nth-of-type(1) > img {
     width: 60px;
     margin-top: 20px;
+    display: none;
   }
   div.wrapper > div.explore > div:nth-of-type(2) > img {
-    width: 100px;
+    width: 170px;
   }
   div.wrapper > div.brands {
     width:var(--width);
@@ -122,33 +125,28 @@ div.wrapper {
     height: 90px;
     background-color: #ebd96b;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
   }
   div.wrapper > div.brands > div {
-    flex: 1 1 0;
+    width: 100%;
     height: inherit;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: row wrap;
-    background-color: #ebd96b;
-    column-gap: 18px;
+    flex-direction: row;
+    column-gap: 5px;
   }
   div.wrapper > div.brands > div > a {
-    width: 80px;
+    width: 40px;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     mix-blend-mode: multiply;
+    margin: 5px;
   }
   div.wrapper > div.brands > div > a > img {
-    background-color: #ebd96b;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    box-shadow: 1px 1px 5px #2b2b2b;
-  }
-  div.wrapper > div.brands > div > a > img:nth-of-type(2) {
-    box-shadow: 0 0 5px #2b2b2b;
-    padding: unset;
+    width: 50px;
   }
   div.wrapper > div.brands > div > a > img:hover {
     transform: scale(1.2);
@@ -156,7 +154,7 @@ div.wrapper {
   div.wrapper > div.arrivalas {
     width: 89%;
     left: calc(50% - 89% / 2);
-    height: 300px;
+    height: 220px;
     top: 48px;
     display: flex;
     flex-direction: row;
@@ -172,13 +170,14 @@ div.wrapper {
   }
   div.wrapper > div.arrivalas > div {
     top: 32px;
-    left: 50px;
+    left: 30px;
     overflow: hidden;
     position: relative;
     width: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    row-gap: 0;
   }
   div.wrapper > div.arrivalas > div > img {
     width: 80px;
@@ -226,15 +225,20 @@ div.wrapper {
   div.wrapper > div.arrivalas > div > div.text {
     display: flex;
     flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
     display: inline-block;
-    font-size: 15px;
+    font-size: 6px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
+    margin: 5px;
+    font-size: 6px;
     transition: 300ms;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
@@ -245,7 +249,7 @@ div.wrapper {
     overflow: hidden;
     left: calc(50% - 89% / 2);
     position: relative;
-    height: 400px;
+    height: 240px;
     top: 28px;
     background-color: rgb(227, 198, 66);
     display: flex;
@@ -260,7 +264,7 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(1) > img {
     width: 200px;
-    height: 400px;
+    height: 240px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) {
     width: 50%;
@@ -268,7 +272,7 @@ div.wrapper {
     text-align: left;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bolder;
     margin: 5px;
     font-style: oblique;
@@ -284,21 +288,22 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2:nth-of-type(1) {
     background-color: whitesmoke;
-    width: 180px;
+    width: 90px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h4 {
-    font-size: 15px;
+    font-size: 11px;
     font-weight: lighter;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h3 {
     font-weight: bolder;
-    margin: 3px;
+    margin: 2px;
     font-style: oblique;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > a {
-    margin: 10px;
+    margin: 5px;
+    font-size: 7px;
     color: whitesmoke;
     padding: 5px;
     border: 1px solid black;
@@ -319,11 +324,11 @@ div.wrapper {
     position: relative;
     left: calc(50% - 89% / 2);
     top: 40px;
-    height: 265px;
+    height: 180px;
     column-gap: 18px;
   }
   div.wrapper > div.favourite > img {
-    width: 280px;
+    width: 130px;
     position: absolute;
   }
   div.wrapper > div.favourite > div {
@@ -349,15 +354,16 @@ div.wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
   }
   div.wrapper > div.favourite > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
     transition: 300ms;
+    font-size: 7px;
   }
-  div.wrapper > div.favourite > div > div.text >h4{
-    font-size: 5px;
+  div.wrapper > div.favourite > div > div.text >h3{
+    font-size: 7px;
   }
   div.wrapper > div.favourite > div > div.text > a:hover {
     color: #2b2b2b;
@@ -368,8 +374,8 @@ div.wrapper {
     width: 89%;
     position: relative;
     left: calc(50% - 89% / 2);
-    top: 40px;
-    height: 400px;
+    top: 18px;
+    height: 220px;
     column-gap: 20px;
     background-color: whitesmoke;
   }
@@ -390,7 +396,7 @@ div.wrapper {
     font-weight: bolder;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
-    font-size: 15px;
+    font-size: 14px;
   }
   div.wrapper > div.download > div > h4 {
     color: gray;
@@ -400,7 +406,7 @@ div.wrapper {
     font-style: oblique;
   }
   div.wrapper > div.download > div > a > img {
-    width: 100px;
+    width: 80px;
   }
   div.wrapper > div.download > div:nth-of-type(2) > img {
     width: 150px;
@@ -412,7 +418,7 @@ div.wrapper {
   }
   div.wrapper > div.join {
     width: 89%;
-    height: 320px;
+    height: 250px;
     background-color: rgb(229, 198, 67);
     position: relative;
     left: calc(50% - 89% / 2);
@@ -423,7 +429,7 @@ div.wrapper {
     position: relative;
     margin: 0 auto;
     top: 40px;
-    left: 4%;
+    left: 35px;
   }
   
   div.wrapper > div.join > form > input {
@@ -461,7 +467,7 @@ div.wrapper {
     font-size: 10px;
   }
   div.wrapper > div.join > form > input[type="submit"]:hover {
-      width: 70px;
+      width: 40px;
       padding: 0;
       font-size: 8px;
       height: 15px;
@@ -473,44 +479,45 @@ div.wrapper {
     margin: 0 auto;
   }
   div.wrapper > div.join > div > h1 {
-    font-size: 28px;
+    font-size: 15px;
     color: whitesmoke;
     font-style: italic;
     text-shadow: 1px 1px 5px lightgray;
   }
   div.wrapper > div.join > div > h4 {
-    font-size: 22px;
+    font-size: 15px;
     color: whitesmoke;
     font-weight: lighter;
     text-align: center;
   }
   div.wrapper > div.footer {
     width: 89%;
-    height: 280px;
+    height: 130px;
     background-color: black;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     margin-top: 15px;
-    column-gap: 8px;
+    column-gap: 2px;
     overflow: hidden;
   }
   div.wrapper > div.footer > div {
     margin-top: 30px;
   }
   div.wrapper > div.footer > div > img {
-    margin-left: 5px;
+    margin-left: 9px;
+    width: 60px;
   }
   div.wrapper > div.footer > div > h4 {
     color: lightgray;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: lighter;
   }
   div.wrapper > div.footer > div:nth-of-type(1) > a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     color: black;
-    padding: 3px;
+    padding: 1px;
     border-radius: 10px;
     background-color: #ebd96b;
   }
@@ -531,14 +538,36 @@ div.wrapper {
     text-decoration: none;
     transition: 300ms;
   }
-  div.wrapper > div.footer > div > a:hover {
-    color: #ebd96b;
+  .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
   }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(2):hover {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(3):hover {
+    background: linear-gradient(90deg, rgba(0,196,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,225,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(4):hover {
+    background: linear-gradient(90deg, rgba(23,0,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,234,1) 100%);
+  }
+  div.wrapper > div.footer > div:nth-of-type(2)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(3)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;
+  }
+  div.wrapper > div.footer > div:nth-of-type(4)>a:hover{
+    color: #ebd96b;
+    font-weight: bold;}
   div.ask{
       position: fixed;
       bottom: 50px;
       z-index: 1;
-      display: inline-block;
+      display: none;
   }
   
   div.ask>a{

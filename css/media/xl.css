@@ -87,7 +87,7 @@ div.wrapper > div.explore > div > a {
   color: white;
   border: 1px solid #2b2b2b;
   padding: 8px;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
   width: 70px;
   background-color: black;
@@ -130,9 +130,8 @@ div.wrapper > div.brands > div {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-flow: row wrap;
-  background-color: #ebd96b;
-  column-gap: 30px;
+  flex-direction: row;
+  column-gap: 25px;
 }
 div.wrapper > div.brands > div > a {
   width: 130px;
@@ -142,14 +141,8 @@ div.wrapper > div.brands > div > a {
   mix-blend-mode: multiply;
 }
 div.wrapper > div.brands > div > a > img {
-  background-color: #ebd96b;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  box-shadow: 1px 1px 5px #2b2b2b;
-}
-div.wrapper > div.brands > div > a > img:nth-of-type(2) {
-  box-shadow: 0 0 5px #2b2b2b;
-  padding: unset;
+ -webkit-transition: all 0.7s ease;
+ transition: all 0.7s ease;
 }
 div.wrapper > div.brands > div > a > img:hover {
   transform: scale(1.2);
@@ -164,8 +157,9 @@ div.wrapper > div.arrivalas {
   column-gap: 20px;
   position: relative;
   padding: 0 20px;
-  justify-content: flex-start;
   overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 div.arrivalas > img {
   width: 200px;
@@ -180,6 +174,11 @@ div.wrapper > div.arrivalas > div {
   width: 280px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+div.wrapper>div.arrivalas>div:nth-of-type(2){
+  margin-bottom: unset;
 }
 div.wrapper > div.arrivalas > div > img {
   width: 250px;
@@ -226,9 +225,12 @@ div.wrapper > div.arrivalas:hover > div> div.cover {
 div.wrapper > div.arrivalas > div > div.text {
   display: flex;
   flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 div.wrapper > div.arrivalas > div > div.text > h3 {
-  display: inline-block;
   font-size: 15px;
 }
 div.wrapper > div.arrivalas > div > div.text > a {
@@ -236,9 +238,14 @@ div.wrapper > div.arrivalas > div > div.text > a {
   color: gray;
   margin: 10px;
   transition: 300ms;
+  display: inline-block;
 }
 div.wrapper > div.arrivalas > div > div.text > a:hover {
   color: #2b2b2b;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(3) > div.text:nth-of-type(3){
+  justify-self: center;
+  background-color: aqua;
 }
 div.wrapper > div.payday {
   width: 89%;
@@ -371,7 +378,6 @@ div.wrapper > div.download {
 }
 div.wrapper > div.download > div {
   width: 50%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -397,9 +403,11 @@ div.wrapper > div.download > div > h4 {
 div.wrapper > div.download > div > a > img {
   width: 200px;
 }
+
 div.wrapper > div.download > div:nth-of-type(2) > img {
   width: 340px;
-  height: 460px;
+  height: 440px;
+  margin-bottom: 20px;
 }
 div.wrapper > div.download > div:nth-of-type(2):hover > img{
     filter: drop-shadow(1px 1px 5px #2b2b2b);
@@ -433,6 +441,7 @@ div.wrapper > div.join > form > input[type="text"] {
   outline: none;
   padding: 0 25px;
   border-radius: 5px;
+  font-size: 18px;
 }
 div.wrapper > div.join > form > input[type="submit"] {
   background-color: #2b2b2b;
@@ -452,6 +461,7 @@ div.wrapper > div.join > form > input[type="submit"] {
   -moz-transition: 500ms;
   -ms-transition: 500ms;
   -o-transition: 500ms;
+  font-size: 15px;
 }
 div.wrapper > div.join > form > input[type="submit"]:hover {
     width: 70px;
@@ -521,11 +531,38 @@ div:nth-of-type(4) {
 div.wrapper > div.footer > div > a {
   color: lightgray;
   text-decoration: none;
-  transition: 300ms;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
 }
-div.wrapper > div.footer > div > a:hover {
+div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
+}
+div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(2):hover {
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(3):hover {
+  background: linear-gradient(90deg, rgba(0,196,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,225,1) 100%);
+}
+div.wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(4):hover {
+  background: linear-gradient(90deg, rgba(23,0,255,1) 0%, rgba(29,80,253,1) 50%, rgba(67,250,234,1) 100%);
+}
+div.wrapper > div.footer > div:nth-of-type(2)>a:hover{
   color: #ebd96b;
+  font-weight: bold;
 }
+div.wrapper > div.footer > div:nth-of-type(3)>a:hover{
+  color: #ebd96b;
+  font-weight: bold;}
+
+div.wrapper > div.footer > div:nth-of-type(4)>a:hover{
+  color: #ebd96b;
+  font-weight: bold;}
+
 div.ask{
     position: fixed;
     bottom: 50px;
@@ -535,14 +572,15 @@ div.ask{
 
 div.ask>a{
     display: inline-block;
-    padding: 15px;
+    padding: 14px;
     border: 1px solid #ebd96b;
-    border-radius: 20px;
+    border-radius: 30px;
+    left: 10px;
     background-color: var(--yellowcolor);
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
