@@ -1,13 +1,14 @@
 div.wrapper {
     width: 100%;
+    overflow: hidden;
   }
   div.wrapper > div.menu {
-    width: 100%;
+    width:100%;
     height: 50px;
     box-shadow: 0 1px 5px #d3d3d3;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 1px;
+    column-gap: 2px;
   }
   div.wrapper > div.menu > div {
    flex: 0 0 1;
@@ -21,7 +22,7 @@ div.wrapper {
     flex-flow: row wrap;
   }
   div.wrapper > div.menu > div:nth-of-type(2) {
-    justify-content: flex-end;
+    justify-content:space-evenly;
   }
   div.wrapper > div.menu > div > a {
     text-decoration: none;
@@ -121,13 +122,14 @@ div.wrapper {
     height: 90px;
     background-color: #ebd96b;
     display: flex;
+    justify-content: space-evenly;
    flex-direction: row;
   }
   div.wrapper > div.brands > div {
     height: inherit;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
    flex-direction: row;
     column-gap: 5px;
@@ -136,6 +138,8 @@ div.wrapper {
   div.wrapper > div.brands > div > a {
     width: 100px;
     height: 30px;
+    text-align: center;
+    justify-content: center;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     mix-blend-mode: multiply;
@@ -151,12 +155,12 @@ div.wrapper {
   div.wrapper > div.arrivalas {
     width: 89%;
     left: calc(50% - 89% / 2);
-    height: 330px;
+    height: 340px;
     top: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 18px;
     position: relative;
     padding: 0 8px;
     justify-content: flex-start;
@@ -170,7 +174,8 @@ div.wrapper {
   div.wrapper > div.arrivalas > div {
     top: 32px;
     overflow: hidden;
-    left: 10%;
+    left: 20%;
+    margin: 5px;
     position: relative;
     width: 140px;
     display: flex;
@@ -234,12 +239,12 @@ div.wrapper {
     top: 5px;
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
-    font-size: 10px;
+    font-size: 9px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 2px;
+    margin: 1px;
     transition: 300ms;
     font-size: 9px;
   }
@@ -250,7 +255,7 @@ div.wrapper {
     width: 89%;
     left: calc(50% - 89% / 2);
     position: relative;
-    height: 360px;
+    height: 300px;
     top: 30px;
     background-color: rgb(227, 198, 66);
     display: flex;
@@ -265,7 +270,7 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(1) > img {
     width: 300px;
-    height: 360px;
+    height: 300px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) {
     width: 50%;
@@ -325,7 +330,7 @@ div.wrapper {
     position: relative;
     left: calc(50% - 89% / 2);
     top: 40px;
-    height: 235px;
+    height: 265px;
     column-gap: 18px;
   }
   div.wrapper > div.favourite > img {
@@ -338,6 +343,7 @@ div.wrapper {
     display: flex;
     margin-top: 40px;
     flex-direction: column;
+    align-items: center;
   }
   div.wrapper > div.favourite > div > img {
     width: 80%;
@@ -375,8 +381,8 @@ div.wrapper {
     width: 89%;
     position: relative;
     left: calc(50% - 89% / 2);
-    top: 20px;
-    height: 450px;
+    top: 25px;
+    height: 360px;
     column-gap: 20px;
     background-color: whitesmoke;
   }

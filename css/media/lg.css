@@ -1,5 +1,6 @@
 div.wrapper {
     width: 100%;
+    overflow: hidden;
   }
   div.wrapper > div.menu {
     width: 100%;
@@ -7,7 +8,7 @@ div.wrapper {
     box-shadow: 0 1px 5px #d3d3d3;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 2px;
+    column-gap: 1px;
   }
   div.wrapper > div.menu > div {
     flex: 1 1 0;
@@ -21,22 +22,24 @@ div.wrapper {
     flex-flow: row wrap;
   }
   div.wrapper > div.menu > div:nth-of-type(2) {
-    justify-content: flex-end;
+    justify-content:space-evenly;
   }
   div.wrapper > div.menu > div > a {
     text-decoration: none;
     color: var(--lightgray);
-    margin: 5px;
-    font-size: 14px;
+    margin: 4px;
+    font-size: 11px;
     transition: 400ms;
   }
   div.wrapper > div.menu > div > a:nth-of-type(5) {
-    padding: 10px;
+    padding: 8px;
     border: 1px sold #2b2b2b;
     color: whitesmoke;
     background-color: #2b2b2b;
     border-radius: 5px;
+    font-size: 11px;
   }
+  
   div.wrapper > div.menu > div > a:hover {
     color: lightgray;
   }
@@ -121,6 +124,7 @@ div.wrapper {
     border-radius: 5px;
     height: 90px;
     background-color: #ebd96b;
+    justify-content: space-evenly;
     display: flex;
     flex-flow: row wrap;
   }
@@ -142,13 +146,10 @@ div.wrapper {
     mix-blend-mode: multiply;
   }
   div.wrapper > div.brands > div > a > img {
-    background-color: #ebd96b;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    box-shadow: 1px 1px 5px #2b2b2b;
   }
   div.wrapper > div.brands > div > a > img:nth-of-type(2) {
-    box-shadow: 0 0 5px #2b2b2b;
     padding: unset;
   }
   div.wrapper > div.brands > div > a > img:hover {
@@ -180,11 +181,12 @@ div.wrapper {
     width: 240px;
     display: flex;
     flex-direction: column;
+    row-gap: 0;
   }
   div.wrapper > div.arrivalas > div > img {
     width: 220px;
-    filter: drop-shadow(1px 1px 5px #2b2b2b);
     height: 300px;
+    filter: drop-shadow(1px 1px 5px #2b2b2b);
   }
   div.wrapper > div.arrivalas > div> div.cover {
     width: 250px;
@@ -227,15 +229,19 @@ div.wrapper {
   div.wrapper > div.arrivalas > div > div.text {
     display: flex;
     flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 10px;
+    margin: 8px;
     transition: 300ms;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
@@ -318,7 +324,7 @@ div.wrapper {
     width: 89%;
     position: relative;
     left: calc(50% - 89% / 2);
-    top: 40px;
+    top: 45px;
     height: 390px;
     column-gap: 18px;
   }
@@ -332,6 +338,8 @@ div.wrapper {
     display: flex;
     margin-top: 40px;
     flex-direction: column;
+    align-items: center;
+    align-items: center;
   }
   div.wrapper > div.favourite > div > img {
     width: 80%;
@@ -362,9 +370,9 @@ div.wrapper {
   div.wrapper > div.download {
     display: flex;
     flex-direction: row;
-    width: 89%;
+    width: 88%;
     position: relative;
-    left: calc(50% - 89% / 2);
+    left: calc(50% - 88% / 2);
     top: 55px;
     height: 450px;
     column-gap: 20px;
@@ -399,7 +407,7 @@ div.wrapper {
     width: 200px;
   }
   div.wrapper > div.download > div:nth-of-type(2) > img {
-    width: 300px;
+    width: 290px;
     height: 400px;
   }
   div.wrapper > div.download > div:nth-of-type(2):hover > img{
@@ -408,7 +416,7 @@ div.wrapper {
   }
   div.wrapper > div.join {
     width: 89%;
-    height: 320px;
+    height: 310px;
     background-color: rgb(229, 198, 67);
     position: relative;
     left: calc(50% - 89% / 2);
@@ -429,11 +437,12 @@ div.wrapper {
   div.wrapper > div.join > form > input[type="text"] {
     background-color: whitesmoke;
     height: 40px;
-    width: 290px;
+    width: 295px;
     border: none;
     outline: none;
     padding: 0 25px;
     border-radius: 5px;
+    font-size: 16px;
   }
   div.wrapper > div.join > form > input[type="submit"] {
     background-color: #2b2b2b;
@@ -453,6 +462,7 @@ div.wrapper {
     -moz-transition: 500ms;
     -ms-transition: 500ms;
     -o-transition: 500ms;
+    font-size: 15px;
   }
   div.wrapper > div.join > form > input[type="submit"]:hover {
       width: 70px;
@@ -494,6 +504,7 @@ div.wrapper {
   }
   div.wrapper > div.footer > div > img {
     margin-left: 15px;
+    width: 160px;
   }
   div.wrapper > div.footer > div > h4 {
     color: lightgray;
@@ -503,7 +514,7 @@ div.wrapper {
   div.wrapper > div.footer > div:nth-of-type(1) > a {
     text-decoration: none;
     margin: 10px;
-    font-size: 30px;
+    font-size: 26px;
     color: black;
     padding: 7px;
     border-radius: 10px;
@@ -514,7 +525,7 @@ div.wrapper {
   div:nth-of-type(4) {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 16px;
     justify-content: center;
     align-items: flex-start;
     width: 16%;
@@ -523,6 +534,7 @@ div.wrapper {
     color: lightgray;
     text-decoration: none;
     transition: 300ms;
+    font-size: 14px;
   }
   .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
@@ -558,10 +570,10 @@ div.wrapper {
   
   div.ask>a{
     display: inline-block;
-    padding: 14px;
+    padding: 10px;
     border: 1px solid #ebd96b;
     border-radius: 30px;
-    left: 10px;
+    left: 6px;
     background-color: var(--yellowcolor);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
