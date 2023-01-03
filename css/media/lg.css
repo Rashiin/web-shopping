@@ -176,10 +176,14 @@ div.wrapper {
   div.wrapper > div.arrivalas > div {
     top: 32px;
     overflow: hidden;
-    left: 10%;
+    left: 9%;
     position: relative;
-    width: 240px;
+    width: 280px;
+    margin: 5px;
+    height: 350px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     row-gap: 0;
   }
@@ -236,12 +240,12 @@ div.wrapper {
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
-    margin: 8px;
+    margin: 10px;
     transition: 300ms;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
@@ -490,7 +494,7 @@ div.wrapper {
   }
   div.wrapper > div.footer {
     width: 89%;
-    height: 320px;
+    height: 280px;
     background-color: black;
     margin: 0 auto;
     display: flex;
@@ -526,7 +530,7 @@ div.wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 16%;
   }

@@ -160,7 +160,7 @@ div.wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 18px;
+    column-gap: 16px;
     position: relative;
     padding: 0 8px;
     justify-content: flex-start;
@@ -169,24 +169,29 @@ div.wrapper {
   div.arrivalas > img {
     width: 120px;
     position: absolute;
-    padding: 0;
   }
   div.wrapper > div.arrivalas > div {
     top: 32px;
     overflow: hidden;
-    left: 20%;
-    margin: 5px;
+    left: 12%;
+    margin: 2px;
     position: relative;
-    width: 140px;
+    width: 150px;
+    height: 230px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 0;
+    column-gap: 0;
   }
   div.wrapper > div.arrivalas > div > img {
     width: 120px;
     filter: drop-shadow(1px 1px 5px #2b2b2b);
     height: 210px;
+    overflow: hidden;
+
   }
   div.wrapper>div.arrivalas>div:nth-of-type(2){
     margin-bottom: unset;
@@ -545,6 +550,7 @@ div.wrapper {
     color: lightgray;
     text-decoration: none;
     transition: 300ms;
+    font-size: 11px;
   }
   .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
@@ -580,10 +586,10 @@ div.wrapper {
   
   div.ask>a{
     display: inline-block;
-    padding: 12px;
+    padding: 6px;
     border: 1px solid #ebd96b;
     border-radius: 30px;
-    left: 10px;
+    left: 4px;
     background-color: var(--yellowcolor);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -600,11 +606,11 @@ div.wrapper {
   div.ask>a>svg{
       display: inline-block;
       position: relative;
-      transform: scale(0.8,0.8);
-      -webkit-transform: scale(0.8,0.8);
-      -moz-transform: scale(0.8,0.8);
-      -ms-transform: scale(0.8,0.8);
-      -o-transform: scale(0.8,0.8);
+      transform: scale(0.6,0.6);
+      -webkit-transform: scale(0.6,0.6);
+      -moz-transform: scale(0.6,0.6);
+      -ms-transform: scale(0.6,0.6);
+      -o-transform: scale(0.6,0.6);
 }
   div.ask>a:hover{
       background-color: chocolate;

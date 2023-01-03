@@ -3,12 +3,16 @@ div.wrapper {
     overflow: hidden;
   }
   div.wrapper > div.menu {
-    width: auto;
-    height: 50px;
+    width: 100%;
+    height: 25px;
     box-shadow: 0 1px 5px #d3d3d3;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     column-gap: 1px;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(245, 245, 245, 0.763);
+    top: 0;
   }
   div.wrapper > div.menu > div {
     flex: 1 1 0;
@@ -20,6 +24,8 @@ div.wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
   div.wrapper > div.menu > div:nth-of-type(2) {
     justify-content:space-evenly;
@@ -32,6 +38,14 @@ div.wrapper {
     font-size: 5px;
     transition: 400ms;
   }
+  div.wrapper > div.menu > div:nth-of-type(2) > a{
+    display: none;
+  } 
+  div.wrapper > div.menu > div:nth-of-type(1) > a{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+  }   
   div.wrapper > div.menu > div > a:nth-of-type(5) {
     padding: 5px;
     border: 1px sold #2b2b2b;
@@ -46,7 +60,7 @@ div.wrapper {
   div.explore {
     position: relative;
     width: 88%;
-    top: 20px;
+    top: 25px;
     left: calc(50% - 88% / 2);
     background-color: whitesmoke;
     height: 380px;
@@ -118,10 +132,10 @@ div.wrapper {
     width: 160px;
   }
   div.wrapper > div.brands {
-    width:var(--width);
+    width:88%;
     position: relative;
     border-radius: 5px;
-    left: calc(50% - 89% / 2);
+    left: calc(50% - 88% / 2);
     top: 30px;
     border-radius: 5px;
     height: 90px;
@@ -133,10 +147,11 @@ div.wrapper {
     width: 100%;
     height: inherit;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    column-gap: 5px;
+    column-gap: 12px;
+    margin: 2px;
   }
   div.wrapper > div.brands > div > a {
     width: 30px;
@@ -156,14 +171,15 @@ div.wrapper {
   div.wrapper > div.arrivalas {
     width: 89%;
     left: calc(50% - 89% / 2);
-    height: 220px;
-    top: 48px;
+    top: 44px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 6px;
+    flex-wrap: wrap;
     position: relative;
-    justify-content: flex-start;
     overflow: hidden;
+    justify-content: center;
+    row-gap: 0;
   }
   div.arrivalas > img {
     width: 100px;
@@ -171,21 +187,26 @@ div.wrapper {
     padding: 0;
   }
   div.wrapper > div.arrivalas > div {
-    top: 32px;
-    left: 12%;
+    top: 5px;
     overflow: hidden;
     position: relative;
-    width: 100px;
+    border-radius: 10px;
+    width: 230px;
+    height: 260px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 0;
-    margin: 5px;
-  }
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
   div.wrapper > div.arrivalas > div > img {
-    width: 80px;
+    width: 170px;
     filter: drop-shadow(1px 1px 5px #2b2b2b);
-    height: 120px;
+    height: 190px;
+    margin-bottom: 8px;
   }
   div.wrapper > div.arrivalas > div> div.cover {
     width: 250px;
@@ -235,13 +256,13 @@ div.wrapper {
   }
   div.wrapper > div.arrivalas > div > div.text > h3 {
     display: inline-block;
-    font-size: 6px;
+    font-size: 11px;
   }
   div.wrapper > div.arrivalas > div > div.text > a {
     text-decoration: none;
     color: gray;
     margin: 5px;
-    font-size: 6px;
+    font-size: 8px;
     transition: 300ms;
   }
   div.wrapper > div.arrivalas > div > div.text > a:hover {
@@ -252,9 +273,9 @@ div.wrapper {
     overflow: hidden;
     left: calc(50% - 89% / 2);
     position: relative;
-    height: 240px;
-    top: 28px;
-    background-color: rgb(227, 198, 66);
+    height: 200px;
+    top: 36px;
+    background-color: rgb(238, 205, 56);
     display: flex;
     flex-flow: row wrap;
   }
@@ -267,7 +288,7 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(1) > img {
     width: 200px;
-    height: 240px;
+    height: 200px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) {
     width: 50%;
@@ -278,6 +299,7 @@ div.wrapper {
     font-size: 12px;
     font-weight: bolder;
     margin: 5px;
+    margin-left: 20px;
     font-style: oblique;
     text-shadow: 1px 1px 5px #2b2b2b;
     transition: 300ms;
@@ -287,7 +309,7 @@ div.wrapper {
     -o-transition: 300ms;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2:hover{
-      color: #ebd96b;
+      color: #e6c808;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h2:nth-of-type(1) {
     background-color: whitesmoke;
@@ -301,7 +323,7 @@ div.wrapper {
   }
   div.wrapper > div.payday > div:nth-of-type(2) > h3 {
     font-weight: bolder;
-    margin: 5px;
+    margin-left: 15px;
     font-style: oblique;
     font-size: 10px;
   }
@@ -309,7 +331,7 @@ div.wrapper {
     font-size:10px;
   }
   div.wrapper > div.payday > div:nth-of-type(2) > a {
-    margin: 9px;
+    margin-left: 20px;
     font-size: 5px;
     color: whitesmoke;
     padding: 5px;
@@ -330,24 +352,30 @@ div.wrapper {
     width: 89%;
     position: relative;
     left: calc(50% - 89% / 2);
-    top: 40px;
-    height: 185px;
-    column-gap: 18px;
+    top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   div.wrapper > div.favourite > img {
     width: 130px;
     position: absolute;
   }
   div.wrapper > div.favourite > div {
-    width: 50%;
-    padding: 0 15px;
+    width: 300px;
     display: flex;
-    margin-top: 30px;
+    position: relative;
+    height: 330px;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    row-gap: 0;
+    column-gap: 0;
   }
   div.wrapper > div.favourite > div > img {
-    width: 80%;
+    width: 250px;
+    height: 200px;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
@@ -369,10 +397,10 @@ div.wrapper {
     text-decoration: none;
     color: gray;
     transition: 300ms;
-    font-size: 6px;
+    font-size: 12px;
   }
   div.wrapper > div.favourite > div > div.text >h3{
-    font-size: 6px;
+    font-size: 12px;
   }
   div.wrapper > div.favourite > div > div.text > a:hover {
     color: #2b2b2b;
@@ -453,19 +481,19 @@ div.wrapper {
     outline: none;
     padding: 0 25px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
   div.wrapper > div.join > form > input[type="submit"] {
     background-color: #2b2b2b;
     color: whitesmoke;
     position: relative;
     height: 25px;
-    width: 60px;
+    width: 50px;
     left: -70px;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0 15px;
+    padding: 0 10px;
     transition: 500ms;
     border-radius: 5px;
     transition: 500ms;
@@ -519,7 +547,7 @@ div.wrapper {
   }
   div.wrapper > div.footer > div > h4 {
     color: lightgray;
-    font-size: 8px;
+    font-size: 7px;
     font-weight: lighter;
   }
   div.wrapper > div.footer > div:nth-of-type(1) > a {
@@ -534,19 +562,38 @@ div.wrapper {
   div.wrapper > div.footer > div:nth-of-type(2),
   div:nth-of-type(3),
   div:nth-of-type(4) {
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 2px;
-    justify-content: flex-start;
+    margin-left: 10px;
     align-items: flex-start;
-    width: 7%;
+    justify-content: flex-start;
+    width: 8%;
     font-size: 6px;
+    row-gap: 5px;
+    height: 90px;
+  }
+  div.wrapper > div.footer > div:nth-of-type(2)>a:nth-of-type(1){
+    font-size: 8px;
+    color: #ebd96b;
+    font-weight: bolder;
+  }
+  div.wrapper > div.footer > div:nth-of-type(3)>a:nth-of-type(1){
+    font-size: 7px;
+    color: #ebd96b;
+    font-weight: bolder;
+  }
+  div.wrapper > div.footer > div:nth-of-type(4)>a:nth-of-type(1){
+    font-size: 8px;
+    color: #ebd96b;
+    font-weight: bolder;
   }
   div.wrapper > div.footer > div > a {
     color: lightgray;
     text-decoration: none;
     transition: 300ms;
+    font-style: oblique;
   }
   .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
