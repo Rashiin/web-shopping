@@ -155,7 +155,7 @@ div.wrapper > div.arrivalas {
   top: 48px;
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 18px;
   position: relative;
   padding: 0 20px;
   overflow: hidden;
@@ -170,7 +170,7 @@ div.arrivalas > img {
 div.wrapper > div.arrivalas > div {
   top: 32px;
   overflow: hidden;
-  left: 15%;
+  left: 10%;
   position: relative;
   width: 280px;
   height: 400px;
@@ -190,19 +190,26 @@ div.wrapper > div.arrivalas > div > img {
   filter: drop-shadow(1px 1px 5px #2b2b2b);
   height: 340px;
 }
+
 div.wrapper > div.arrivalas > div> div.cover {
-  width: 250px;
-  height: 340px;
+  width: 270px;
+  height: 355px;
   left: -100%;
+  border-radius: 15px;
   top: 0;
   position: absolute;
   background-color: rgba(211, 211, 211, 0.685);
   transition: 400ms;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 div.wrapper > div.arrivalas > div > div.cover > h1 {
   text-align: center;
   font-weight: bold;
   margin-top: 30px;
+  margin-left: 20%;
   color: chocolate;
   font-style: italic;
   text-shadow: 1px 1px 5px black;
@@ -223,8 +230,97 @@ div.wrapper > div.arrivalas > div> div.cover > a {
 div.wrapper > div.arrivalas > div:nth-of-type(1)> div.cover > a:hover {
   background-color: #2b2b2b;
 }
-div.wrapper > div.arrivalas:hover > div> div.cover {
-  left: 0;
+div.wrapper > div.arrivalas> div:nth-of-type(1):hover> div.cover {
+  left: 5px;
+}
+
+
+div.wrapper > div.arrivalas > div:nth-of-type(2)> div.cover2 {
+  width: 270px;
+  height: 355px;
+  left: -100%;
+  border-radius: 15px;
+  top: 0;
+  position: absolute;
+  background-color: rgba(211, 211, 211, 0.685);
+  transition: 400ms;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(2) > div.cover2 > h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  color: purple;
+  font-style: italic;
+  margin-left: 20%;
+  text-shadow: 1px 1px 5px black;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(2)> div.cover2 > a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 10px;
+  padding: 6px;
+  color: palevioletred;
+  background-color: lightskyblue;
+  border: 1px solid yellow;
+  transition: 400ms;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(2)> div.cover2 > a:hover {
+  background-color: violet;
+  color: #2b2b2b;
+}
+div.wrapper > div.arrivalas> div:nth-of-type(2):hover> div.cover2 {
+  left: 5px;
+}
+
+div.wrapper > div.arrivalas > div:nth-of-type(3)> div.cover3 {
+  width: 270px;
+  height: 355px;
+  left: -100%;
+  border-radius: 15px;
+  top: 0;
+  position: absolute;
+  background-color: rgba(211, 211, 211, 0.685);
+  transition: 400ms;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(3) > div.cover3 > h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  color: skyblue;
+  font-style: italic;
+  margin-left: 20%;
+  text-shadow: 1px 1px 5px black;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(3)> div.cover3 > a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 10px;
+  padding: 6px;
+  color: lightblue;
+  background-color: plum;
+  border: 1px solid peru;
+  transition: 400ms;
+}
+div.wrapper > div.arrivalas > div:nth-of-type(3)> div.cover3 > a:hover {
+  background-color: lightpink;
+  color: #2b2b2b;
+}
+div.wrapper > div.arrivalas> div:nth-of-type(3):hover> div.cover3 {
+  left: 5px;
 }
 
 div.wrapper > div.arrivalas > div > div.text {
