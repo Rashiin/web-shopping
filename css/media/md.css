@@ -1,6 +1,7 @@
 div.wrapper {
     width: 100%;
     overflow: hidden;
+
   }
   div.wrapper > div.menu {
     width: auto;
@@ -544,7 +545,6 @@ div.wrapper {
     color: lightgray;
     text-decoration: none;
     transition: 300ms;
-    font-style: oblique;
   }
 
   .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {

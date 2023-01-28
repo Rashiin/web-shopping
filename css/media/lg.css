@@ -540,7 +540,7 @@ div.wrapper {
     text-decoration: none;
     transition: 300ms;
     font-size: 14px;
-    font-style: oblique;
+
   }
   .wrapper > div.footer > div:nth-of-type(1) > a:nth-of-type(1):hover {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(24,154,200,1) 14%, rgba(39,150,212,1) 29%, rgba(41,132,219,1) 41%, rgba(51,44,232,1) 84%, rgba(50,45,253,1) 100%);
